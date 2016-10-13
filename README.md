@@ -1,13 +1,13 @@
-# I Can Variable Font (Tips for making variable fonts)
+# I Can Variable Font (Notes on for generating variable fonts)
 
 Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and some comfort using Terminal.
 
 There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request or contact us. Hopefully this is just an interim document until the process becomes streamlined.
 
-## Example files
+## Example Files
 In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works.
 
-## Instructions
+## The Magic 
 1. Install `fontmake`
   - First [clone or download the repository](https://github.com/scribbletone/fontmake).
     - Note the official repository is [actually here](https://github.com/googlei18n/fontmake), but there’s currently a bug. I’ll switch the link back as soon as the bug is addressed in the official repository.
