@@ -1,4 +1,4 @@
-# I Can Variable Font (Notes on for generating variable fonts)
+# I Can Variable Font (Notes on generating variable fonts)
 
 Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and some comfort using Terminal.
 
