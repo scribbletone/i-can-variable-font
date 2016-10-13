@@ -9,8 +9,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 
 ## The Magic 
 1. Install `fontmake`
-  - First [clone or download the repository](https://github.com/scribbletone/fontmake).
-    - Note the official repository is [actually here](https://github.com/googlei18n/fontmake), but there’s currently a bug. I’ll switch the link back as soon as the bug is addressed in the official repository.
+  - First [clone or download the repository](https://github.com/googlei18n/fontmake).
   - In Terminal, navigate to the new `fontmake` repository you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
 2. Create a DesignSpace file
