@@ -1,2 +1,2 @@
-# i-can-variable-font
+# I Can Variable Font
 Tips for making variable fonts

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.typemytype.robofont.background.layerStrokeColor</key>
+	<array>
+		<real>0.7544410342261905</real>
+		<real>0.6332543478652821</real>
+		<real>0.15589464181292753</real>
+		<real>0.30050317796610165</real>
+	</array>
+	<key>com.typemytype.robofont.compileSettings.autohint</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
+	<false/>
+	<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.decompose</key>
+	<false/>
+	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
+	<integer>0</integer>
+	<key>com.typemytype.robofont.compileSettings.releaseMode</key>
+	<false/>
+	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
+	<array>
+		<real>0.5</real>
+		<real>0.0</real>
+		<real>0.5</real>
+		<real>0.7</real>
+	</array>
+	<key>com.typemytype.robofont.italicSlantOffset</key>
+	<integer>0</integer>
+	<key>com.typemytype.robofont.layerOrder</key>
+	<array>
+		<string>background</string>
+	</array>
+	<key>com.typemytype.robofont.segmentType</key>
+	<string>curve</string>
+	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
+	<integer>1</integer>
+	<key>com.typemytype.robofont.sort</key>
+	<array>
+		<dict>
+			<key>ascending</key>
+			<array>
+				<string>A</string>
+			</array>
+			<key>type</key>
+			<string>glyphList</string>
+		</dict>
+	</array>
+	<key>public.glyphOrder</key>
+	<array>
+		<string>A</string>
+	</array>
+</dict>
+</plist>

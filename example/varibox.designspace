@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<designspace format="3">
+  <sources>
+    <source familyname="Varibox" filename="./sources/Varibox-one.ufo" name="master_1">
+      <lib copy="1"/>
+      <info copy="1"/>
+      <kerning copy="1"/>
+      <location>
+        <dimension name="weight" xvalue="0.000000"/>
+      </location>
+    </source>
+    <source familyname="Varibox" filename="./sources/Varibox-two.ufo" name="master_2">
+      <location>
+        <dimension name="weight" xvalue="1.000000"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Varibox" filename="./instances/varibox-medium.ufo" stylename="Medium">
+      <info />
+      <kerning />
+      <location>
+        <dimension name="weight" xvalue="0.600000"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>
