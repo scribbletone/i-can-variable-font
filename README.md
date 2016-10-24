@@ -19,7 +19,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 3. Generate interpolatable TTFs
   - In Terminal, navigate to the `fontmake` directory.
     - If you’ve closed the Terminal window since installing, you’ll also need to run `source env/bin/activate`.
-  - run `fontmake -o rtf-interpolatable -m path-to-your-designspace-file`. 
+  - run `fontmake -o ttf-interpolatable -m path-to-your-designspace-file`. 
     - Make sure to substitute your path to the DesignSpace file.
   - If all goes well, you should now have TTFs in the `fontmake/master_ttf_interpolatable` directory.
 4. Generate the final variable font
