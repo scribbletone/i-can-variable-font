@@ -40,7 +40,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 
 ## Helpful Resources and Articles
 - [Fontmake](https://github.com/googlei18n/fontmake) by Google
-- [FontTools](https://github.com/fonttools) a community project by [@justvanrossum](https://github.com/justvanrossum), [@behdad](https://github.com/behdad), [@anthrotype](https://github.com/anthrotype), [@brawer](https://github.com/brawer), and many more. 
+- [FontTools](https://github.com/fonttools) a community project with contributions by [@justvanrossum](https://github.com/justvanrossum), [@behdad](https://github.com/behdad), [@anthrotype](https://github.com/anthrotype), [@brawer](https://github.com/brawer), and many more. 
   - In particular [varLib](https://github.com/fonttools/fonttools/blob/master/Lib/fontTools/varLib/__init__.py#L13-L17)
 - [MutatorMath](https://github.com/LettError/MutatorMath) by [LettError](http://letterror.com/)
 - [OpenType Font Variations Overview](https://www.microsoft.com/typography/otspec180/otvaroverview.htm) by Microsoft
