@@ -2,7 +2,7 @@
 
 Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and have some comfort using Terminal.
 
-There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request or contact us([us@scribbletone.com](us@scribbletone.com)). Hopefully this is just an interim document until the process becomes streamlined.
+There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request, [open an issue](https://github.com/scribbletone/i-can-variable-font/issues), or email us([us@scribbletone.com](us@scribbletone.com)). Hopefully this is just an interim document until the process becomes streamlined.
 
 ## Example Files
 In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works. It only contains one glyph, an `A`, which is just a rectangle that should get taller and shorter.
@@ -40,7 +40,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 
 ## Helpful Resources and Articles
 - [Fontmake](https://github.com/googlei18n/fontmake) by Google
-- [Fonttools](https://github.com/fonttools) and in particular [varLib](https://github.com/fonttools/fonttools/blob/master/Lib/fontTools/varLib/__init__.py#L13-L17) by Just van Rossum, [LettError](http://letterror.com/)
+- [FontTools](https://github.com/fonttools) and in particular [varLib](https://github.com/fonttools/fonttools/blob/master/Lib/fontTools/varLib/__init__.py#L13-L17) a community project by [@justvanrossum](https://github.com/justvanrossum), [@behdad](https://github.com/behdad), [@anthrotype](https://github.com/anthrotype), [@brawer](https://github.com/brawer), and many more
 - [MutatorMath](https://github.com/LettError/MutatorMath) by [LettError](http://letterror.com/)
 - [OpenType Font Variations Overview](https://www.microsoft.com/typography/otspec180/otvaroverview.htm) by Microsoft
 - [Introducing OpenType Variable Fonts](https://medium.com/@tiro/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369#.imv0hzmro) by [John Hudson](http://www.tiro.com/)
