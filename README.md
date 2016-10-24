@@ -1,24 +1,24 @@
 # I Can Variable Font (Notes on generating variable fonts)
 
-Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and some comfort using Terminal.
+Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and have some comfort using Terminal.
 
-There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request or contact us. Hopefully this is just an interim document until the process becomes streamlined.
+There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request or contact us([us@scribbletone.com](us@scribbletone.com)). Hopefully this is just an interim document until the process becomes streamlined.
 
 ## Example Files
-In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works.
+In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works. It only contains one glyph, an `A`, which is just a rectangle that should get taller and shorter.
 
-## The Magic 
+## How To 
 1. Install `fontmake`
   - First [clone or download the repository](https://github.com/googlei18n/fontmake).
   - In Terminal, navigate to the new `fontmake` repository you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
 2. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
-  - Link up your master UFOs using the following examples as a guide https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
+  - Populate the file use the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
   - Add at least one instance
 3. Generate interpolatable TTFs
   - In Terminal, navigate to the `fontmake` directory.
-    - If you’ve closed the Terminal window since installing, you’ll need to run `source env/bin/activate`.
+    - If you’ve closed the Terminal window since installing, you’ll also need to run `source env/bin/activate`.
   - run `fontmake -o rtf-interpolatable -m path-to-your-designspace-file`. 
     - Make sure to substitute your path to the DesignSpace file.
   - If all goes well, you should now have TTFs in the `fontmake/master_ttf_interpolatable` directory.
@@ -32,7 +32,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 
 ## Weird Things
 - Your sources seem to need a `GPOS` or kerning table. In the example file, I got around that by just creating a single kerning pair with a value of 0.
-- If you don’t have groups in your UFO, don’t include `<groups copy="1"/>` in your DesignSpace file.
+- If you don’t have groups in your UFO, don’t include `<groups copy="1"/>` in your DesignSpace file. It’ll throw an error.
 
 ## ‘Using’ the fonts
 - Mac previewer(requires running a script to build the application) https://github.com/googlei18n/fontview
