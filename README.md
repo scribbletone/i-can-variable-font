@@ -2,7 +2,7 @@
 
 Notes and tips for generating a simple variable font on a Mac. These assume you’re already familiar with the UFO format, creating masters that can be interpolated, and have some comfort using Terminal.
 
-There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request, [open an issue](https://github.com/scribbletone/i-can-variable-font/issues), or email us([us@scribbletone.com](us@scribbletone.com)). Hopefully this is just an interim document until the process becomes streamlined.
+There are probably better ways of doing this. If anyone has better sources, corrections, or the process changes, please send a pull request or [open an issue](https://github.com/scribbletone/i-can-variable-font/issues). Hopefully this is just an interim document until the process becomes streamlined.
 
 ## Example Files
 In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works. It only contains one glyph, an `A`, which is just a rectangle that should get taller and shorter.
@@ -40,6 +40,11 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 ## Weird Things
 - Your sources seem to need a `GPOS` or kerning table. In the example file, I got around that by just creating a single kerning pair with a value of 0.
 - If you don’t have groups in your UFO, don’t include `<groups copy="1"/>` in your DesignSpace file. It’ll throw an error.
+- In RoboFont, using relative paths when including external feature files can throw a `No such file or directory` error, as [seen here](https://github.com/googlei18n/fontmake/issues/157)
+  - To fix, change your relative paths from something like: `include(../features.fea);` to `include(../../features.fea);`
+- Superpolator instances that live outside an axis's range are clamped in the generated v-fonts (Still need to test if extrapolated instances are supported when they exist inside the axis limits)
+- Superpolator substitution rules (http://new.superpolator.com/documentation/rules/) get lost somewhere between the designspace file and the generated v-font. Or perhaps the generated fonts are legit and the apps that currently support v-fonts just don't support that feature yet?
+- Apps that currently support v-fonts only seem to support one family name per font (Still could be tested more thoroughly.)
 
 ## ‘Using’ the fonts
 - Mac previewer https://github.com/googlei18n/fontview/releases
@@ -57,3 +62,9 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 ## Examples/Demos
 - http://cjtype.com/dunbar/variablefonts/index.html
 - http://stuff.djr.com/variable-demo/
+
+## Outside Contributors
+Thanks to [@nicksherman](https://github.com/nicksherman) for feedback and revisions. 
+
+If anyone has any corrections or suggestions, please send a pull request or [open an issue](https://github.com/scribbletone/i-can-variable-font/issues).
+
