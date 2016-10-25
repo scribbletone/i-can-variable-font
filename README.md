@@ -11,11 +11,12 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 1. Install `pip`
   - Check to see if you have it installed already.
     - In Terminal type `pip` and hit enter. 
-      - If it returns something like the following, skip to step 2. `pip 1.5.6 from ...`
-      - If it says `command not found`, follow the [instructions here](https://pip.pypa.io/en/latest/installing/#install-or-upgrade-pip).
+      - If it says `command not found`, follow the [instructions here](https://pip.pypa.io/en/latest/installing/#install-or-upgrade-pip). Otherwise skip to step 2.
 2. Install `fontmake`
-  - First [clone or download the repository](https://github.com/googlei18n/fontmake).
-  - In Terminal, navigate to the new `fontmake` repository you just downloaded.
+  - First [clone or download the repository](https://github.com/googlei18n/fontmake). 
+    - You can save this anywhere you like, but you’ll need it every time you generate the fonts. So put it somewhere that makes sense for your file organization.
+    - If you download it as zip, remove '-master' from the directory’s name.
+  - In Terminal, navigate to the new `fontmake` directory you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
     - You may need to also install `pip` if their in
 3. Create a DesignSpace file
@@ -30,7 +31,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
   - If all goes well, you should now have TTFs in the `fontmake/master_ttf_interpolatable` directory.
 5. Generate the final variable font
   - Copy the generated TTFs from the previous step, and place them in the same directory as your source UFOs.
-  - Make sure the TTFs have the same file name as your UFOs. If not, you’ll get an error. 
+  - Make sure the TTFs have the same file name as your UFOs(without the file extension). If not, you’ll get an error. 
   - From the `fontmake` directory run `python env/lib/python2.7/site-packages/fontTools/varLib/__init__.py path-to-your-designspace-file`. 
     - Again, make sure to substitute your path to the DesignSpace file.
   - Cross your fingers :)
