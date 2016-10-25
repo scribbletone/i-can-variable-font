@@ -8,21 +8,27 @@ There are probably better ways of doing this. If anyone has better sources, corr
 In the `example` directory, you can find a sample DesignSpace file and interpolatable UFO’s. You can use those files for your first attempt, to simplify the process, and make sure everything works. It only contains one glyph, an `A`, which is just a rectangle that should get taller and shorter.
 
 ## How To 
-1. Install `fontmake`
+1. Install `pip`
+  - Check to see if you have it installed already.
+    - In Terminal type `pip` and hit enter. 
+      - If it returns something like the following, skip to step 2. `pip 1.5.6 from ...`
+      - If it says `command not found`, follow the [instructions here](https://pip.pypa.io/en/latest/installing/#install-or-upgrade-pip).
+2. Install `fontmake`
   - First [clone or download the repository](https://github.com/googlei18n/fontmake).
   - In Terminal, navigate to the new `fontmake` repository you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
-2. Create a DesignSpace file
+    - You may need to also install `pip` if their in
+3. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
   - Populate the file use the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
   - Add at least one instance
-3. Generate interpolatable TTFs
+4. Generate interpolatable TTFs
   - In Terminal, navigate to the `fontmake` directory.
     - If you’ve closed the Terminal window since installing, you’ll also need to run `source env/bin/activate`.
   - run `fontmake -o ttf-interpolatable -m path-to-your-designspace-file`. 
     - Make sure to substitute your path to the DesignSpace file.
   - If all goes well, you should now have TTFs in the `fontmake/master_ttf_interpolatable` directory.
-4. Generate the final variable font
+5. Generate the final variable font
   - Copy the generated TTFs from the previous step, and place them in the same directory as your source UFOs.
   - Make sure the TTFs have the same file name as your UFOs. If not, you’ll get an error. 
   - From the `fontmake` directory run `python env/lib/python2.7/site-packages/fontTools/varLib/__init__.py path-to-your-designspace-file`. 
