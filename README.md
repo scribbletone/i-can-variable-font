@@ -18,7 +18,6 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
     - If you download it as zip, remove '-master' from the directory’s name.
   - In Terminal, [navigate](https://github.com/scribbletone/i-can-variable-font#terminal-tips) to the new `fontmake` directory you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
-    - You may need to also install `pip` if their in
 3. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
   - Populate the file use the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
