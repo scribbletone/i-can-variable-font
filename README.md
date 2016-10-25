@@ -16,7 +16,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
   - First [clone or download the repository](https://github.com/googlei18n/fontmake). 
     - You can save this anywhere you like, but you’ll need it every time you generate the fonts. So put it somewhere that makes sense for your file organization.
     - If you download it as zip, remove '-master' from the directory’s name.
-  - In Terminal, navigate to the new `fontmake` directory you just downloaded.
+  - In Terminal, [navigate](https://github.com/scribbletone/i-can-variable-font#terminal-tips) to the new `fontmake` directory you just downloaded.
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
     - You may need to also install `pip` if their in
 3. Create a DesignSpace file
@@ -24,7 +24,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
   - Populate the file use the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
   - Add at least one instance
 4. Generate interpolatable TTFs
-  - In Terminal, navigate to the `fontmake` directory.
+  - In Terminal, [navigate](https://github.com/scribbletone/i-can-variable-font#terminal-tips) to the `fontmake` directory.
     - If you’ve closed the Terminal window since installing, you’ll also need to run `source env/bin/activate`.
   - run `fontmake -o ttf-interpolatable -m path-to-your-designspace-file`. 
     - Make sure to substitute your path to the DesignSpace file.
