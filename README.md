@@ -20,7 +20,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
 3. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
-  - Populate the file use the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
+  - Populate the file using the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
   - Add at least one instance
 4. Generate interpolatable TTFs
   - In Terminal, [navigate](https://github.com/scribbletone/i-can-variable-font#terminal-tips) to the `fontmake` directory.
