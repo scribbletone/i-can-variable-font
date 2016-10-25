@@ -71,7 +71,6 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 - To clear the window of noise from previous output, hit the `command k` keys.
 
 ## Outside Contributors
-Thanks to [@nicksherman](https://github.com/nicksherman) for feedback and revisions. 
+Thanks to [@nicksherman](https://github.com/nicksherman) for feedback and revisions, and [@cjdunn](https://github.com/cjdunn) for pointing the way.
 
-If anyone has any corrections or suggestions, please send a pull request or [open an issue](https://github.com/scribbletone/i-can-variable-font/issues).
-
+Help us make this guide better! Open a pull request or [issue](https://github.com/scribbletone/i-can-variable-font/issues) with any suggestions or corrections.
