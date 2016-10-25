@@ -41,9 +41,10 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 - If you don’t have groups in your UFO, don’t include `<groups copy="1"/>` in your DesignSpace file. It’ll throw an error.
 - In RoboFont, using relative paths when including external feature files can throw a `No such file or directory` error, as [seen here](https://github.com/googlei18n/fontmake/issues/157)
   - To fix, change your relative paths from something like: `include(../features.fea);` to `include(../../features.fea);`
-- Superpolator instances that live outside an axis's range are clamped in the generated v-fonts (Still need to test if extrapolated instances are supported when they exist inside the axis limits)
+- Superpolator instances that are based on extrapolations are clamped in the generated v-fonts. For example, if your boldest master has a weight value of 800, an instance with an extrapolated weight value of 1000 will appear the same as 800 in the generated font.
 - Superpolator substitution rules (http://new.superpolator.com/documentation/rules/) get lost somewhere between the designspace file and the generated v-font. Or perhaps the generated fonts are legit and the apps that currently support v-fonts just don't support that feature yet?
 - Apps that currently support v-fonts only seem to support one family name per font (Still could be tested more thoroughly.)
+- If you’re utilizing any custom axes that aren’t among the handful of [registered](https://www.microsoft.com/typography/otspec180/fvar.htm#VAT) axis tags, you need to write them into the `standard_axis_map` dictionary in the `/fontTools/varLib/__init__.py` file.
 
 ## ‘Using’ the fonts
 - Mac previewer https://github.com/googlei18n/fontview/releases
