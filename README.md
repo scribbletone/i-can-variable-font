@@ -63,6 +63,14 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 - http://cjtype.com/dunbar/variablefonts/index.html
 - http://stuff.djr.com/variable-demo/
 
+## Terminal Tips
+- To quickly get the path to a directory/folder or file, drag it into terminal.
+- To navigate to a directory in Terminal, type `cd ` then drag the folder into terminal and hit enter.
+- To see the contents of the current directory enter `ls`. To see hidden files as well, enter `ls -a`.
+- To navigate relative to your current location `cd some_folder/another_folder`
+- To cycle through recently used commands, hit the up arrow key.
+- To clear the window of noise from previous output, hit the `command k` keys.
+
 ## Outside Contributors
 Thanks to [@nicksherman](https://github.com/nicksherman) for feedback and revisions. 
 
