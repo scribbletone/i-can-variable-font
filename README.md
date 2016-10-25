@@ -35,7 +35,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 - If you don’t have groups in your UFO, don’t include `<groups copy="1"/>` in your DesignSpace file. It’ll throw an error.
 
 ## ‘Using’ the fonts
-- Mac previewer(requires running a script to build the application) https://github.com/googlei18n/fontview
+- Mac previewer https://github.com/googlei18n/fontview/releases
 - Webkit nightly https://webkit.org/downloads/
 
 ## Helpful Resources and Articles
