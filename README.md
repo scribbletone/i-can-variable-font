@@ -47,18 +47,18 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 - If you’re utilizing any custom axes that aren’t among the handful of [registered](https://www.microsoft.com/typography/otspec180/fvar.htm#VAT) axis tags, you need to write them into the `standard_axis_map` dictionary in the `/fontTools/varLib/__init__.py` file.
 
 ## ‘Using’ the fonts
-- Mac previewer https://github.com/googlei18n/fontview/releases
-- Axis Praxis: easy browser interface for previewing and testing http://www.axis-praxis.org/ 
-  - Requires a browser that supports Variable Fonts: https://webkit.org/downloads/
+- [Mac previewer](https://github.com/googlei18n/fontview/releases), by Google
+- [Axis Praxis](http://www.axis-praxis.org/), by Laurence Penney. An easy browser interface for previewing and testing
+  - Requires a [browser that supports Variable Fonts](https://webkit.org/downloads/)
 
 ## Helpful Resources and Articles
-- [Fontmake](https://github.com/googlei18n/fontmake) by Google
-- [FontTools](https://github.com/fonttools) a community project with contributions by [@justvanrossum](https://github.com/justvanrossum), [@behdad](https://github.com/behdad), [@anthrotype](https://github.com/anthrotype), [@brawer](https://github.com/brawer), and many more. 
+- [Fontmake](https://github.com/googlei18n/fontmake), by Google
+- [FontTools](https://github.com/fonttools), a community project with contributions by [@justvanrossum](https://github.com/justvanrossum), [@behdad](https://github.com/behdad), [@anthrotype](https://github.com/anthrotype), [@brawer](https://github.com/brawer), and many more. 
   - In particular [varLib](https://github.com/fonttools/fonttools/blob/master/Lib/fontTools/varLib/__init__.py#L13-L17)
 - [MutatorMath](https://github.com/LettError/MutatorMath) by [LettError](http://letterror.com/)
-- [OpenType Font Variations Overview](https://www.microsoft.com/typography/otspec180/otvaroverview.htm) by Microsoft
+- [OpenType Font Variations Overview](https://www.microsoft.com/typography/otspec180/otvaroverview.htm), by Microsoft
 - [Introducing OpenType Variable Fonts](https://medium.com/@tiro/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369#.imv0hzmro) by [John Hudson](http://www.tiro.com/)
-- [Variable Fonts](http://typographica.org/on-typography/variable-fonts/) by [CJ Dunn](http://thecjdunn.com/)
+- [Variable Fonts](http://typographica.org/on-typography/variable-fonts/), by [CJ Dunn](http://thecjdunn.com/)
 
 ## Examples/Demos
 - http://cjtype.com/dunbar/variablefonts/index.html
