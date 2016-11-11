@@ -48,7 +48,8 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 
 ## ‘Using’ the fonts
 - Mac previewer https://github.com/googlei18n/fontview/releases
-- Webkit nightly https://webkit.org/downloads/
+- Axis Praxis: easy browser interface for previewing and testing http://www.axis-praxis.org/ 
+  - Requires a browser that supports Variable Fonts: https://webkit.org/downloads/
 
 ## Helpful Resources and Articles
 - [Fontmake](https://github.com/googlei18n/fontmake) by Google
