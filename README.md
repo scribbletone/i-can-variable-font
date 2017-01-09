@@ -31,7 +31,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 5. Generate the final variable font
   - Copy the generated TTFs from the previous step, and place them in the same directory as your source UFOs.
   - Make sure the TTFs have the same file name as your UFOs(without the file extension). If not, you’ll get an error. 
-  - From the `fontmake` directory run `python env/lib/python2.7/site-packages/fontTools/varLib/__init__.py path-to-your-designspace-file`. 
+  - From the `fontmake` directory run `fonttools varLib path-to-your-designspace-file`. 
     - Again, make sure to substitute your path to the DesignSpace file.
   - Cross your fingers :)
   - If everything goes well, you should end up with a new TTF file next to the DesignSpace with `-GX` in the name.
