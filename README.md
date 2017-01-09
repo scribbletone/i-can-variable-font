@@ -13,10 +13,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
     - In Terminal type `pip` and hit enter. 
       - If it says `command not found`, follow the [instructions here](https://pip.pypa.io/en/latest/installing/#install-or-upgrade-pip). Otherwise skip to step 2.
 2. Install `fontmake`
-  - First [clone or download the repository](https://github.com/googlei18n/fontmake). 
-    - You can save this anywhere you like, but you’ll need it every time you generate the fonts. So put it somewhere that makes sense for your file organization.
-    - If you download it as zip, remove '-master' from the directory’s name.
-  - In Terminal, [navigate](https://github.com/scribbletone/i-can-variable-font#terminal-tips) to the new `fontmake` directory you just downloaded.
+  - `pip install fontmake`
   - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
 3. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
