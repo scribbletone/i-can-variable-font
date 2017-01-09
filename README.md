@@ -32,7 +32,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
     - Again, make sure to substitute your path to the DesignSpace file.
     - This command changed in version 3.2.0 of fonttools. If you’re using an older installation, you may need to run `python env/lib/python2.7/site-packages/fontTools/varLib/__init__.py path-to-your-designspace-file`
   - Cross your fingers :)
-  - If everything goes well, you should end up with a new TTF file next to the DesignSpace with `-GX` in the name.
+  - If everything goes well, you should end up with a new TTF file next to the DesignSpace with `-VF`(or `-GX` on older versions) in the name.
 
 ## Weird Things
 - Your sources seem to need a `GPOS` or kerning table. In the example file, I got around that by just creating a single kerning pair with a value of 0.
