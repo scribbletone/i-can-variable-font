@@ -14,7 +14,7 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
       - If it says `command not found`, follow the [instructions here](https://pip.pypa.io/en/latest/installing/#install-or-upgrade-pip). Otherwise skip to step 2.
 2. Install `fontmake`
   - `pip install fontmake`
-  - Follow the instructions in their [readme](https://github.com/googlei18n/fontmake).
+    - More detailed notes in their [readme](https://github.com/googlei18n/fontmake).
 3. Create a DesignSpace file
   - create a new text file called `yourfont.designspace`
   - Populate the file using the following examples as a guide. Most importantly, make sure the paths to the UFOs are correct. https://github.com/scribbletone/i-can-variable-font/blob/master/example/varibox.designspace and https://github.com/LettError/MutatorMath/blob/master/Docs/designSpaceFileFormat.md
@@ -28,8 +28,9 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
 5. Generate the final variable font
   - Copy the generated TTFs from the previous step, and place them in the same directory as your source UFOs.
   - Make sure the TTFs have the same file name as your UFOs(without the file extension). If not, you’ll get an error. 
-  - From the `fontmake` directory run `fonttools varLib path-to-your-designspace-file`. 
+  - From the `fontmake` directory run `fonttools varLib path-to-your-designspace-file`.  
     - Again, make sure to substitute your path to the DesignSpace file.
+    - This command changed in version 3.2.0 of fonttools. If you’re using an older installation, you may need to run `python env/lib/python2.7/site-packages/fontTools/varLib/__init__.py path-to-your-designspace-file`
   - Cross your fingers :)
   - If everything goes well, you should end up with a new TTF file next to the DesignSpace with `-GX` in the name.
 
