@@ -26,6 +26,9 @@ In the `example` directory, you can find a sample DesignSpace file and interpola
     - Make sure to substitute your path to the DesignSpace file.
   - Cross your fingers :)
   - If everything goes well, you should end up with a new TTF file with `-VF` in the name, located in a `variable_ttf` subfolder.
+  
+## Upgrading
+The instructions above assume you’re using the latest version of `fontmake`. If you’ve already installed `fontmake` in the past, you may need to upgrade by running `pip install --upgrade fontmake`.
 
 ## Weird Things
 - Your sources seem to need a `GPOS` or kerning table. In the example file, I got around that by just creating a single kerning pair with a value of 0.
