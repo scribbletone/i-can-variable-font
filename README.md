@@ -42,6 +42,8 @@ The instructions above assume you’re using the latest version of `fontmake`. I
 
 ## ‘Using’ the fonts
 - [Mac previewer](https://github.com/googlei18n/fontview/releases), by Google
+- [Adobe Illustrator CC](https://helpx.adobe.com/illustrator/using/whats-new.html#Variablefonts)
+- [Adobe Photoshop CC](https://helpx.adobe.com/photoshop/how-to/make-font-variation-photoshop.html)
 - [Axis Praxis](http://www.axis-praxis.org/), by Laurence Penney. An easy browser interface for previewing and testing
   - Requires a [browser that supports Variable Fonts](http://www.axis-praxis.org/blog/2017-04-05/17/how-to-get-variable-fonts-working-in-safari-chrome-and-firefox-macos)
 
